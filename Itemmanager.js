@@ -27,7 +27,7 @@ Vue.component('organizador', {
  //     Sortable.create(document.getElementById('sortable'), {
        // animation: 200,
      //   onUpdate: () => { 
-         this.order = sortable.toArray(); 
+         //this.order = sortable.toArray(); 
       //});
     
     //var indexes = [];
@@ -151,24 +151,19 @@ computed:  {
             '{{d.titulo}}' +
             
       '<template v-if=mover>' +
-      '<div class="uk-card-primary uk-position-center-right ">'+
-            '<span class="uk-position-center-right" :uk-icon="\'icon: \' + icons.open"></span>'+
-             '<span class="uk-position-center-right" :uk-icon="\'icon: \' + icons.open"></span>'+
-             '</div>'+
+        '<span class="uk-position-right uk-margin-small" :uk-icon="\'icon: \' + icons.open"></span>'+
+       //      '<span class="uk-position-center-right" :uk-icon="\'icon: \' + icons.open"></span>'+
+       '</div>'+
         '</template>' +   
        '<template v-if=eliminar>' +
-            '<span. @click="del(index,d)" '+
-          'class="uk-margin-small-right uk-position-center-right uk-align" :uk-icon="\'icon: \' + icons.close"></span>'+
+            '<span @click="del(index,d)" class="uk-margin-small-right uk-position-center-right uk-align" :uk-icon="\'icon: \' + icons.close"></span>'+
        '</template>' +
        '<template v-if=recuperar>' +
-       '<span. @click="recup(index,d)" '+
-       'class="uk-margin-small-right uk-position-center-right uk-align-right" :uk-icon="\'icon: \' + icons.recup"></span>'+
+          '<span. @click="recup(index,d)" class="uk-margin-small-right uk-position-center-right uk-align-right" :uk-icon="\'icon: \' + icons.recup"></span>'+
        '</template>' +
-            '</div>' +
-      '<template v-if=texto>' +     
-      '<div class="uk-child-width-expand@l uk-text-center" uk-grid uk-dropdown>' +
-        '{{d.dato}}' +
       '</div>' +
+      '<template v-if=texto>' +     
+          '<div class="uk-child-width-expand@l uk-text-center" uk-grid uk-dropdown>{{d.dato}}</div>' +
       '</template>'+
       '</div>' +
   '</div>' +
