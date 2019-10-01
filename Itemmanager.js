@@ -156,10 +156,10 @@ computed:  {
        '</div>'+
         '</template>' +   
        '<template v-if=eliminar>' +
-            '<span @click="del(index,d)" class="uk-margin-small-right uk-position-center-right uk-align" :uk-icon="\'icon: \' + icons.close"></span>'+
+            '<span @click="del(index,d)" class="uk-margin-small-right uk-position-center-right" :uk-icon="\'icon: \' + icons.close"></span>'+
        '</template>' +
        '<template v-if=recuperar>' +
-          '<span. @click="recup(index,d)" class="uk-margin-small-right uk-position-center-right uk-align-right" :uk-icon="\'icon: \' + icons.recup"></span>'+
+          '<span @click="recup(index,d)" class="uk-margin-small-right uk-position-center-right uk-align-right" :uk-icon="\'icon: \' + icons.recup"></span>'+
        '</template>' +
       '</div>' +
       '<template v-if=texto>' +     
