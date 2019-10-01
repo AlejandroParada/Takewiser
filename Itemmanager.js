@@ -151,9 +151,8 @@ computed:  {
             '{{d.titulo}}' +
             
       '<template v-if=mover>' +
-        '<span class="uk-position-right uk-margin-small" :uk-icon="\'icon: \' + icons.open"></span>'+
-       //      '<span class="uk-position-center-right" :uk-icon="\'icon: \' + icons.open"></span>'+
-       '</div>'+
+          '<span class="uk-position-right uk-margin-small" :uk-icon="\'icon: \' + icons.open"></span>'+
+          '<span class="uk-flexbox" :uk-icon="\'icon: \' + icons.open"></span>'+       
         '</template>' +   
        '<template v-if=eliminar>' +
             '<span @click="del(index,d)" class="uk-margin-small-right uk-position-center-right" :uk-icon="\'icon: \' + icons.close"></span>'+
